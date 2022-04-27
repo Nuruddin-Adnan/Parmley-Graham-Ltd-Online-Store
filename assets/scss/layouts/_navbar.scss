@@ -1,0 +1,160 @@
+.header{
+   .nav{
+      background: $color-ash-black;
+      align-items: center;
+
+      .desktop-nav{
+         padding: 10px 0;
+         .contact{
+            @media(max-width: 991px){
+               justify-content: center;
+            }
+
+            p{
+               color:$color-white;
+               font-size: 14px;
+   
+               a{
+                  color: $color-yellow;
+                  font-size: 14px;
+               }
+            }
+         }
+
+         .log-in-nav{
+            a{
+               color: $color-white;
+               margin-left: 15px;
+               font-size: 14px;
+               &:hover{
+                  opacity: 0.7;
+               }
+
+               .icon{
+                  font-size: 17px;
+
+                  &.cart{
+                     position: relative;
+                     margin-right: 10px;
+
+                     .sup{
+                        position: absolute;
+                        top: -10px;
+                        right: -15px;
+                        padding: 5px;
+                        height: 20px;
+                        width: 20px;
+                        border-radius: 50%;
+                        background: $color-cornflower;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+      .mobile-nav{
+         padding: 10px 0;
+
+         .right-content{
+            .cart-area{
+               display: flex;
+               align-items: center;
+
+               .cart-logo{
+                  .cart{
+                     color: $color-white;
+                     position: relative;
+                     display: flex;
+
+                     .sup{
+                        position: relative;
+                        top: -10px;
+                        right: -3px;
+                        padding: 5px;
+                        border-radius: 50%;
+                        height: 20px;
+                        width: 20px;
+                        background: $color-cornflower;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;                        
+                     }
+
+                  }
+               }
+            }
+
+            .right-hidden-menu{
+               .offcanvas-customed{
+                  height: 60vh;
+
+                  .log-in-n-contact-collapsed{
+                     ul{
+                        li{
+                           a{
+                              text-transform: uppercase;
+                           }
+
+                           p{
+                              color: $color-ash-black;
+                              a{
+                                 color: $color-yellow;
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .category-nav{
+      padding: 10px 0;
+      .contents{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0;
+
+         li{
+            align-items: center;
+            margin-right: 0 3px;
+            a{
+               font-family: Siemens-Sans-Regular;
+               color: $color-ash-black;
+               font-size: 12px;
+            }
+
+            &.search-box{
+               .customed-btn{
+                  display: flex; 
+                  align-items: center;
+
+                  .input-area{
+                     max-width: 58px;
+                     height: 25px;
+                     border-top: 2px solid $color-yellow;
+                     border-bottom: 2px solid $color-yellow;
+                     border-left: 2px solid $color-yellow;
+                  }
+
+                  .btn-search{
+                     height: 25px;
+                     border: none;
+                     background: $color-cornflower;
+                     display: flex;
+                     align-items: center;
+                     padding: 5px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

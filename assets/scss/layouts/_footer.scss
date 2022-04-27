@@ -1,0 +1,31 @@
+.footer{
+   .footer-top{
+      background: $color-ash-black;
+      padding: 80px 0;
+   
+      @media(max-width:767px){
+         padding: 50px 0;
+      }
+   
+      ul{
+         li{
+            a{
+               font-family: Siemens-Sans-Regular;
+               color: $color-white;
+               font-size: 14px;
+               margin-bottom: 14px;
+
+               &:hover{
+                  opacity: 0.7;
+               }
+            }
+         }
+      }
+
+      p{
+         a{
+            color: $color-yellow;
+         }
+      }
+   }
+}
